@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-background: oklch(27.81% .0296 256.85);
+    --color-foreground: oklch(79.75% .0951 268.35);
+
+    --color-primary: oklch(37% .013 285.805);
+    --color-primary-foreground: oklch(79.75% .0951 268.35);
+
+    --color-secondary: oklch(27.4% .006 286.033);
+    --color-secondary-foreground: oklch(79.75% .0951 268.35);
+
+    --color-muted: oklch(44.41% .0271 256.85);
+    --color-muted-foreground: oklch(67.06% .0345 268.35);
+
+    --color-card: oklch(21% .006 285.885);
+    --color-card-foreground: oklch(79.75% .0951 268.35);
+
+    --color-popover: oklch(21% .006 285.885);
+    --color-popover-foreground: oklch(79.75% .0951 268.35);
+
+    --color-accent: oklch(27.4% .006 286.033);
+    --color-accent-foreground: oklch(79.75% .0951 268.35);
+
+    --color-border: oklch(48.24% .0518 256.85);
+    --color-input: oklch(27.4% .006 286.033);
+
+    --color-success: oklch(72.3% .219 149.579);
+    --color-destructive: oklch(50.5% .213 27.518);
+    --color-link: oklch(62.3% .214 259.815);
+
+    --color-code: oklch(21% .006 285.885);
+    --color-code-foreground: oklch(79.75% .0951 268.35);
+    --color-code-number: oklch(55.2% .016 285.938);
+    --color-code-highlight: oklch(27.4% .006 286.033);
+
+    /* Additional mappings for common Tailwind colors */
+    --color-ring: oklch(48.24% .0518 256.85);
+
+    /* Box shadows */
+    --shadow-popover: 0 0 24px #00000080;
+}
+
+/* Optional: Define utility classes for your custom colors */
+@layer utilities {
+    .bg-popover {
+        background-color: var(--color-popover);
+    }
+
+    .text-popover-foreground {
+        color: var(--color-popover-foreground);
+    }
+
+    .border-popover-border {
+        border-color: var(--color-border);
+    }
+
+    .text-code-number {
+        color: var(--color-code-number);
+    }
+
+    .bg-code-highlight {
+        background-color: var(--color-code-highlight);
+    }
+
+    .text-link {
+        color: var(--color-link);
+    }
+
+    .shadow-popover {
+        box-shadow: var(--shadow-popover);
+    }
+}
+
+
+@layer base {
+    :root {
+        --font-display: "Satoshi", "sans-serif";
+        --breakpoint-3xl: 1920px;
+        --color-avocado-100: oklch(0.99 0 0);
+        --color-avocado-200: oklch(0.98 0.04 113.22);
+        --color-avocado-300: oklch(0.94 0.11 115.03);
+        --color-avocado-400: oklch(0.92 0.19 114.08);
+        --color-avocado-500: oklch(0.84 0.18 117.33);
+        --color-avocado-600: oklch(0.53 0.12 118.34);
+        --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+        --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+    }
+
+    :root {
+        --font-display: "Satoshi", "sans-serif";
+        font-family: Inter, sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
+
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
