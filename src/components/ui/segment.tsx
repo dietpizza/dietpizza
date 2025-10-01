@@ -3,16 +3,16 @@ import { cn } from "../../utils";
 
 type SegmentProps = {
   children?: ReactNode;
-  innerClasses?: string;
-  outerClasses?: string;
+  innerStyle?: string;
+  outerStyle?: string;
   sepTop?: boolean;
   sepBottom?: boolean;
 };
 
 export const Segment: React.FC<SegmentProps> = ({
   children,
-  innerClasses,
-  outerClasses,
+  innerStyle,
+  outerStyle,
   sepBottom,
   sepTop,
 }) => {
@@ -20,7 +20,7 @@ export const Segment: React.FC<SegmentProps> = ({
     <div
       className={cn(
         "flex justify-center border-border",
-        outerClasses,
+        outerStyle,
         sepTop && "border-t",
         sepBottom && "border-b",
       )}
@@ -28,7 +28,7 @@ export const Segment: React.FC<SegmentProps> = ({
       <div
         className={cn(
           "flex border-l border-r border-border container ml-2 mr-2",
-          innerClasses,
+          innerStyle,
         )}
       >
         {children}
