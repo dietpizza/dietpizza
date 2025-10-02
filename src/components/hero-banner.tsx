@@ -43,14 +43,14 @@ export const HeroBanner: React.FC = () => {
           <div className="flex items-center h-6 pl-4.5">
             <Typewriter
               text={[
-                "Frontend Developer.",
-                "Android Developer.",
-                "OpenSource Contributor.",
+                "Fullstack Developer with frontend expertise.",
+                "Focus on performance, UX and scalability.",
+                "Building native/hybrid Android apps.",
               ]}
-              speed={70}
+              speed={60}
               className="font-mono font-semibold text-sm"
               waitTime={2000}
-              deleteSpeed={40}
+              deleteSpeed={30}
               cursorChar={"_"}
               cursorAnimationVariants={{
                 initial: { opacity: 1 },

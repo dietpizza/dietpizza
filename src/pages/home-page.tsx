@@ -1,5 +1,5 @@
 import React from "react";
-import { HeroBanner, InfoSection, NavBar } from "../components";
+import { AboutSection, HeroBanner, InfoSection, NavBar } from "../components";
 
 export const HomePage: React.FC = () => {
   return (
@@ -7,6 +7,7 @@ export const HomePage: React.FC = () => {
       <NavBar />
       <HeroBanner />
       <InfoSection />
+      <AboutSection />
     </div>
   );
 };
